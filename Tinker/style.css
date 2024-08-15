@@ -136,7 +136,7 @@ body {
     height: 100vh;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr;
     background-attachment: fixed;
     gap: 1em;
 }
@@ -201,12 +201,11 @@ body {
     border-radius: 20px;
 }
 
-.blog {
+.blog{
     height: 100vh;
     width: 100%;
     background-image: url('images/blog-bg.jpg');
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+   display: flex;
 }
 
 .links {
@@ -376,11 +375,15 @@ button a {
           height: 80px; }
         }
         .text{
-            margin-top: 50%;
+            margin-top: 70%;
         }
         .naav li a{
             display: block;
             padding: 2px;
+        }
+        .blog{
+          display: flex;
+          flex-direction: column;
         }
         
         
