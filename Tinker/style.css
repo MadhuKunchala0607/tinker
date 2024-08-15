@@ -1,0 +1,387 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+    overflow-x: hidden; 
+}
+
+.container1 {
+    height: 100vh;
+    width: 100%;
+    background-image: url('images/banner_bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.naavbar {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: rgba(112, 109, 109, 0.5);
+    z-index: 10; 
+}
+
+.naav ul li {
+    list-style: none;
+    display: inline;
+    
+}
+
+.naav a {
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.text-content {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    height: 50vh;
+    width: 35%;
+    color: white;
+}
+
+.text h1 {
+    margin-left: 20px;
+}
+
+.card button {
+    height: 30px;
+    width: 50%;
+    border-radius: 20px;
+    background-color: skyblue;
+    padding: 5px;
+}
+
+.card button:hover {
+    background-color: orange;
+}
+
+.container2 {
+    height: auto;
+    width: 100%;
+    background-image: url('images/about-bg.jpg');
+    display: flex;
+    gap: 4em;
+    
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-wrap: wrap; 
+}
+
+.container2 > .card {
+    height: 70vh;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    line-height: 30px;
+    background: none;
+    border: none;
+    
+}
+
+.img-card, .img-card2, .img-card3, .img-card4 {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: orange;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+}
+.img-card{
+    background-image: url('images/service_icon_01.png');
+    
+    background-size: auto;
+}
+.img-card2{
+    background-image: url('images/service_icon_02.png');
+    
+    background-size: auto;
+}
+.img-card3{
+    background-image: url('images/service_icon_03.png');
+    
+    background-size: auto;
+}
+.img-card4{
+    background-image: url('images/service_icon_04.png');
+    
+    background-size: auto;
+}
+
+.line, .line2, .line3, .line4 {
+    border: none;
+    height: 2px;
+    background-color: white;
+    margin: 20px 0;
+    width: 90%;
+}
+
+.container3 {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-attachment: fixed;
+    gap: 1em;
+}
+
+.grid1 {
+    background-color: skyblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 30px;
+}
+
+.grid-images {
+    height: 100vh;
+    width: 100%;
+}
+
+.grid-images iframe {
+    height: 100vh;
+    width: 100%;
+    border: none; 
+}
+
+.grid1 li {
+    list-style: none;
+}
+
+.grid1 a {
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+    font-weight: 500;
+    text-shadow: 0px 4px 2px 2px;
+}
+
+.grid1 a:hover {
+    color: orange;
+}
+
+.slide {
+    height: 50vh;
+    width: 100%;
+    background-color: orange;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.some {
+    height: 30vh;
+    width: 50%;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin: 0 auto; 
+    border-radius: 20px;
+}
+
+.blog {
+    height: 100vh;
+    width: 100%;
+    background-image: url('images/blog-bg.jpg');
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.links {
+    color: white;
+    background-color: rgba(25, 25, 25, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+button {
+    height: 10%;
+    width: 80%;
+    border-radius: 30px;
+}
+
+button a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.contact {
+    height: 50vh;
+    width: 100%;
+    background-color: rgba(152, 146, 146, 0.595);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-text {
+    height: 300px;
+    width: 300px;
+    padding: 20px;
+}
+
+.contact-text button {
+    height: 40px;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.map {
+    height: 50vh;
+    width: 100%;
+}
+
+.blogpics iframe {
+    width: 100%;
+    height: 100vh;
+    border: none; 
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%; 
+    border: none; }
+
+@media (max-width: 1200px) {
+    .container1 .text {
+        width: 50%;
+    }
+
+    .container2 {
+        gap: 2em;
+    }
+
+    .container2 > .card {
+        width: 25%;
+    }
+}
+
+@media (max-width: 992px) {
+    .container1 .text {
+        width: 70%;
+    }
+
+    .container2 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .container2 > .card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .container3 {
+        grid-template-columns: 1fr;
+    }
+
+    .slide {
+        height: 40vh;
+    }
+
+    .some {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .text-content .text {
+        width: 90%;
+    }
+
+    .grid1 {
+        padding: 20px;
+    }
+
+    .contact-text {
+        width: 90%;
+    }
+
+    .map iframe {
+        height: 40vh;
+    }
+    .container2{
+        display: grid;
+    }
+    .card{
+        height: 200px;
+        width: 400px;
+    }
+}
+
+@media (max-width: 576px) {
+    .card button {
+        width: 70%;
+    }
+
+    .text-content {
+        height: auto;
+    }
+
+    .some {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .container2 > .card {
+        width: 90%;
+        flex-direction: column;
+    }
+    @media (max-width: 500px) {
+       
+        .container2 {
+          flex-direction: column; 
+          gap: 2em; 
+        }
+        
+        .container2>.card {
+          width: 100%; 
+          height: auto; 
+          padding: 20px; 
+        }
+        
+        .img-card, .img-card2, .img-card3, .img-card4 {
+          width: 80px; 
+          height: 80px; }
+        }
+        .text{
+            margin-top: 50%;
+        }
+        .naav li a{
+            display: block;
+            padding: 2px;
+        }
+        
+        
+}

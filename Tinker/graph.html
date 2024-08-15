@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <style>
+    body{
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    img{
+        height: 300px;
+        width: 400px;
+        animation: moveImages 2s ease-in;
+    }
+   @keyframes moveImages{
+    from{
+        transform: translateY(70%);
+        opacity: 0;
+    }
+    to{
+        transform: translatex(0);
+        opacity: 1;
+    }
+   }
+    
+  </style>
+</head>
+<body>
+   <img src="images/portfolio_big_item_01.jpg" alt="">
+   <img src="images/portfolio_item_02.jpg" alt="">
+   
+    
+</body>
+</html>

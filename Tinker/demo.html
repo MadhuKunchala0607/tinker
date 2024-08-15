@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container2 {
+      height: auto;
+      width: 100%;
+      background-image: url('images/about-bg.jpg');
+      display: flex;
+      
+      gap: 4em;
+      
+      align-items: center;
+      justify-content: center;
+      color: white;
+      flex-wrap: wrap; 
+  }
+  
+  .container2 > .card {
+      height: 70vh;
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      line-height: 30px;
+      background: none;
+      border: none;
+      
+  }
+  
+  .img-card, .img-card2, .img-card3, .img-card4 {
+      height: 120px;
+      width: 120px;
+      border-radius: 50%;
+      background-color: orange;
+      background-size: 50%;
+      background-repeat: no-repeat;
+      background-position: center;
+      padding: 20px;
+  }
+  
+  .line, .line2, .line3, .line4 {
+      border: none;
+      height: 2px;
+      background-color: white;
+      margin: 20px 0;
+      width: 90%;
+  }
+ 
+ 
+ 
+  /* Add this media query to make the layout responsive for mobile devices */
+@media (max-width: 500px) {
+  .container2 {
+    flex-direction: column; /* Stack the cards vertically on mobile */
+    gap: 2em; /* Reduce the gap between cards on mobile */
+  }
+  
+  .container2>.card {
+    width: 100%; /* Make each card full-width on mobile */
+    height: auto; /* Adjust the height of each card on mobile */
+    padding: 20px; /* Add some padding to each card on mobile */
+  }
+  
+  .img-card, .img-card2, .img-card3, .img-card4 {
+    width: 80px; /* Reduce the size of the image on mobile */
+    height: 80px; /* Reduce the size of the image on mobile */
+  }
+  
+  .line, .line2, .line3, .line4 {
+    width: 80%; /* Reduce the width of the horizontal line on mobile */
+  }
+  
+  /* You can also adjust the font sizes and line heights on mobile */
+  .card h3 {
+    font-size: 18px; /* Reduce the font size of the heading on mobile */
+  }
+  
+  .card p {
+    font-size: 14px; /* Reduce the font size of the paragraph on mobile */
+    line-height: 20px; /* Adjust the line height of the paragraph on mobile */
+  }
+}
+    
+  
+  
+  </style>
+</head>
+<body>
+  <div class="container2">
+    <div class="card">
+        <div class="img-card"></div>
+        <h3>Smart Notification</h3>
+        <hr class="line">
+        <p>Curabitur non risus fringilla libero accumsan molestie et quis justo. Cras aliquam tempor sem, vestibulum facilisis dui. Mauris malesuada porta.</p>
+        <button class="btn">See More</button>
+    </div>
+    <div class="card">
+        <div class="img-card2"></div>
+        <h3>Quick Support</h3>
+        <hr class="line">
+        <p>Curabitur non risus fringilla libero accumsan molestie et quis justo. Cras aliquam tempor sem, vestibulum facilisis dui. Mauris malesuada porta.</p>
+        <button class="btn">See More</button>
+    </div>
+    <div class="card">
+        <div class="img-card3"></div>
+        <h3>Lovely Web Design</h3>
+        <hr class="line">
+        <p>Curabitur non risus fringilla libero accumsan molestie et quis justo. Cras aliquam tempor sem, vestibulum facilisis dui. Mauris malesuada porta.</p>
+        <button class="btn">See More</button>
+    </div>
+    <div class="card">
+        <div class="img-card4"></div>
+        <h3>One-Click Setup</h3>
+        <hr class="line">
+        <p>Curabitur non risus fringilla libero accumsan molestie et quis justo. Cras aliquam tempor sem, vestibulum facilisis dui. Mauris malesuada porta.</p>
+        <button class="btn">See More</button>
+    </div>
+</div>
+  
+</body>
+</html>

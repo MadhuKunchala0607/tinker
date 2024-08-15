@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Images</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        img {
+            height: 200px;
+            width: 300px;
+            margin: 10px;
+            position: relative;
+            animation: moveImages 5s ease-out forwards;
+        }
+
+        @keyframes moveImages {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="images/portfolio_big_item_01.jpg" alt="">
+    <img src="images/portfolio_item_02.jpg" alt="">
+    <img src="images/portfolio_big_item_03.jpg" alt="">
+    <img src="images/portfolio_item_04.jpg" alt="">
+    <img src="images/portfolio_big_item_05.jpg" alt="">
+</body>
+</html>
